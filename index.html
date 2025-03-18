@@ -1,0 +1,24 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="imagem-container">
+        <img src="assets/amigo-secreto.png" alt="Amigo Secreto">
+    </div>
+    <h1 id="mensagem"></h1>
+    <form onsubmit='return AdicionaNomes()' id='FormNomes'>
+        <input id='EntradaNomes' type="text" name='EntradaNomes'>
+        <button id='BotaoAdicionar' type='reset' @click='AdicionaNomes'>Adicionar</button>
+    </form>
+    <br>
+    <h1 id="listadenomes"></h1>
+    <br>
+    <form onsubmit="return Sorteio()" id="FormSorteio">
+        <button id="BotaoSorteio" type="submit" @click='Sorteio'>Sorteio</button>
+    </form>
+    <h1 id="sorteio"></h1>
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
